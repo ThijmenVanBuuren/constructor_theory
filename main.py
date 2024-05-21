@@ -195,4 +195,10 @@ if __name__ == "__main__":
         Constructor(energy=2, time=3, variable_output=[1], name="Exercise"),
     ]
     title = "Constructors Smoking"
-    plot_constructors(constructors=constructors, x_range=[0, 5], y_range=[0, 5], title=title)
+    counterfactual_size = 2
+    easy_change_size = 2
+
+    plot_constructors(constructors=constructors, 
+                      x_range=[0, 5], y_range=[0, 5], title=title,
+                      counterfactual_diameter=counterfactual_size,
+                      easy_change_diameter=easy_change_size)
